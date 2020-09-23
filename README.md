@@ -1,1 +1,1 @@
-项目最新集成了swagger2~
+项目最新集成了swagger2
