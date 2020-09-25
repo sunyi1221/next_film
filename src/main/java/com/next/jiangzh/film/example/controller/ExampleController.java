@@ -1,8 +1,10 @@
 package com.next.jiangzh.film.example.controller;
 
+import com.next.jiangzh.film.dao.entity.NextUser;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/v1/example/")
 @Api("ExampleController相关的api")
+@Slf4j
 public class ExampleController {
 
     @ApiOperation(value = "测试SwaggerValue", notes = "测试SwaggerNotes")
@@ -28,6 +31,8 @@ public class ExampleController {
             value = "入参str", paramType = "query", required = true, dataType = "string")
     @RequestMapping(value = "test")
     public String test(String str) {
+        NextUser nextUser = NextUser.builder().userName("sunyi").userPwd("123456").build();
+        System.out.println(nextUser);
         return "test=" + str;
     }
 }

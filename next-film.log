@@ -1,59 +1,141 @@
-2020-09-23 13:56:10.215  INFO 13224 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : Starting NextFilmApplication on SunYi with PID 13224 (E:\学习软件\IDEA\workspace-xxkt\next_film\target\classes started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
-2020-09-23 13:56:10.226 DEBUG 13224 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
-2020-09-23 13:56:10.227  INFO 13224 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : No active profile set, falling back to default profiles: default
-2020-09-23 13:56:10.454  INFO 13224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-23 13:56:10.455  INFO 13224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-23 13:56:15.161  INFO 13224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-09-23 13:56:15.250  INFO 13224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-23 13:56:15.250  INFO 13224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-09-23 13:56:15.582  INFO 13224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-23 13:56:15.586  INFO 13224 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5130 ms
-2020-09-23 13:56:17.374  INFO 13224 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-09-23 13:56:17.767  INFO 13224 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-23 13:56:18.006  INFO 13224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-23 13:56:18.132  INFO 13224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-23 13:56:18.491  INFO 13224 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-23 13:56:18.574  INFO 13224 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-23 13:56:18.641  INFO 13224 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-23 13:56:18.896  INFO 13224 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-09-23 13:56:18.909  INFO 13224 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-09-23 13:56:18.919 ERROR 13224 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2020-09-23 13:56:18.925  INFO 13224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-09-23 13:56:18.934  INFO 13224 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-2020-09-23 14:01:13.721  INFO 1856 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : Starting NextFilmApplication on SunYi with PID 1856 (E:\学习软件\IDEA\workspace-xxkt\next_film\target\classes started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
-2020-09-23 14:01:13.726 DEBUG 1856 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
-2020-09-23 14:01:13.727  INFO 1856 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : No active profile set, falling back to default profiles: default
-2020-09-23 14:01:13.909  INFO 1856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-09-23 14:01:13.910  INFO 1856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-09-23 14:01:17.329  INFO 1856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
-2020-09-23 14:01:17.358  INFO 1856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-09-23 14:01:17.359  INFO 1856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-09-23 14:01:17.581  INFO 1856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-09-23 14:01:17.582  INFO 1856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3672 ms
-2020-09-23 14:01:19.174  INFO 1856 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2020-09-23 14:01:19.968  INFO 1856 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-09-23 14:01:20.278  INFO 1856 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-09-23 14:01:20.361  INFO 1856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-09-23 14:01:20.699  INFO 1856 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-09-23 14:01:20.735  INFO 1856 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-09-23 14:01:20.796  INFO 1856 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-09-23 14:01:21.183  INFO 1856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
-2020-09-23 14:01:21.194  INFO 1856 --- [restartedMain] c.next.jiangzh.film.NextFilmApplication  : Started NextFilmApplication in 9.347 seconds (JVM running for 12.348)
-2020-09-23 14:01:38.077  INFO 1856 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-09-23 14:01:38.077  INFO 1856 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-09-23 14:01:38.089  INFO 1856 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-25 00:03:12.575  INFO 10920 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 10920 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:03:12.586 DEBUG 10920 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:03:12.588  INFO 10920 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:03:18.457  INFO 10920 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:03:20.785  INFO 10920 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:03:21.484  INFO 10920 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:03:22.227  INFO 10920 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:03:22.312  INFO 10920 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:03:22.363  INFO 10920 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:03:22.593  INFO 10920 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 11.216 seconds (JVM running for 15.491)
+2020-09-25 00:03:23.414 DEBUG 10920 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:03:23.770 DEBUG 10920 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:03:23.31(Timestamp), 8(Integer)
+2020-09-25 00:03:23.778 DEBUG 10920 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 0
+2020-09-25 00:03:23.834  INFO 10920 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:03:23.856  INFO 10920 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:04:37.538  INFO 17244 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 17244 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:04:37.540 DEBUG 17244 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:04:37.541  INFO 17244 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:04:41.596  INFO 17244 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:04:43.212  INFO 17244 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:04:43.942  INFO 17244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:04:44.774  INFO 17244 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:04:44.856  INFO 17244 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:04:44.935  INFO 17244 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:04:45.183  INFO 17244 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 8.483 seconds (JVM running for 13.034)
+2020-09-25 00:04:45.704 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:04:45.994 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:04:45.553(Timestamp), 4(Integer)
+2020-09-25 00:04:46.010 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:04:46.016 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:04:46.026 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:04:46.065 DEBUG 17244 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:04:46.094  INFO 17244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:04:46.113  INFO 17244 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:06:49.358  INFO 14768 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 14768 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:06:49.370 DEBUG 14768 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:06:49.371  INFO 14768 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:06:53.333  INFO 14768 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:06:55.046  INFO 14768 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:06:55.859  INFO 14768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:06:56.636  INFO 14768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:06:56.700  INFO 14768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:06:56.786  INFO 14768 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:06:57.082  INFO 14768 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 8.863 seconds (JVM running for 12.38)
+2020-09-25 00:07:47.421 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:07:47.886 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:07:47.116(Timestamp), 4(Integer)
+2020-09-25 00:07:47.897 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:07:47.903 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:07:47.913 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:07:47.978 DEBUG 14768 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:07:48.063  INFO 14768 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:07:48.101  INFO 14768 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:08:26.747  INFO 19412 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 19412 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:08:26.750 DEBUG 19412 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:08:26.751  INFO 19412 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:08:31.400  INFO 19412 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:08:33.859  INFO 19412 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:08:34.694  INFO 19412 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:08:35.568  INFO 19412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:08:35.632  INFO 19412 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:08:35.714  INFO 19412 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:08:35.996  INFO 19412 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 10.583 seconds (JVM running for 13.686)
+2020-09-25 00:08:54.500  INFO 10456 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 10456 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:08:54.503 DEBUG 10456 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:08:54.508  INFO 10456 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:08:58.441  INFO 10456 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:09:00.366  INFO 10456 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:09:01.213  INFO 10456 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:09:02.373  INFO 10456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:09:02.477  INFO 10456 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:09:02.590  INFO 10456 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:09:03.084  INFO 10456 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 9.613 seconds (JVM running for 13.443)
+2020-09-25 00:09:17.808 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:09:18.034 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:09:17.687(Timestamp), 4(Integer)
+2020-09-25 00:09:18.046 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:09:18.050 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:09:18.058 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:09:18.094 DEBUG 10456 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:09:18.128  INFO 10456 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:09:18.146  INFO 10456 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:09:30.455 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:09:30.920 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:09:30.326(Timestamp), 4(Integer)
+2020-09-25 00:09:30.928 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:09:30.934 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:09:30.943 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:09:30.987 DEBUG 19412 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:09:31.035  INFO 19412 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:09:31.057  INFO 19412 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:09:51.373  INFO 1500 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 1500 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:09:51.375 DEBUG 1500 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:09:51.376  INFO 1500 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:09:56.247  INFO 1500 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:09:58.466  INFO 1500 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:09:59.292  INFO 1500 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:10:00.256  INFO 1500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:10:00.322  INFO 1500 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:10:00.401  INFO 1500 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:10:00.681  INFO 1500 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 10.701 seconds (JVM running for 14.369)
+2020-09-25 00:10:20.578 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:10:20.991 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:10:20.459(Timestamp), 4(Integer)
+2020-09-25 00:10:21.001 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:10:21.006 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:10:21.018 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:10:21.056 DEBUG 1500 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:10:21.102  INFO 1500 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:10:21.126  INFO 1500 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:14:40.813  INFO 10772 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 10772 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:14:40.818 DEBUG 10772 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:14:40.830  INFO 10772 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:14:46.049  INFO 10772 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:14:47.782  INFO 10772 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:14:48.684  INFO 10772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:14:49.781  INFO 10772 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:14:49.862  INFO 10772 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:14:49.971  INFO 10772 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:14:50.275  INFO 10772 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 11.238 seconds (JVM running for 15.641)
+2020-09-25 00:15:02.615 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET life_state=?, update_time=? WHERE UUID=? 
+2020-09-25 00:15:03.053 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 0(Integer), 2020-09-25 00:15:02.483(Timestamp), 4(Integer)
+2020-09-25 00:15:03.063 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:15:03.068 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:15:03.079 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:15:03.131 DEBUG 10772 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:15:03.201  INFO 10772 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:15:03.231  INFO 10772 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2020-09-25 00:15:36.106  INFO 6084 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Starting UserServiceImplTest on SunYi with PID 6084 (started by Administrator in E:\学习软件\IDEA\workspace-xxkt\next_film)
+2020-09-25 00:15:36.108 DEBUG 6084 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-09-25 00:15:36.109  INFO 6084 --- [main] c.n.j.f.s.user.UserServiceImplTest       : No active profile set, falling back to default profiles: default
+2020-09-25 00:15:40.263  INFO 6084 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-25 00:15:41.881  INFO 6084 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-25 00:15:42.577  INFO 6084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:15:43.334  INFO 6084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-25 00:15:43.403  INFO 6084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-25 00:15:43.476  INFO 6084 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-25 00:15:43.723  INFO 6084 --- [main] c.n.j.f.s.user.UserServiceImplTest       : Started UserServiceImplTest in 9.607 seconds (JVM running for 13.093)
+2020-09-25 00:16:28.524 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==>  Preparing: UPDATE next_user_t SET update_time=? WHERE UUID=? 
+2020-09-25 00:16:28.971 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : ==> Parameters: 2020-09-25 00:16:28.364(Timestamp), 4(Integer)
+2020-09-25 00:16:28.980 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.updateById   : <==    Updates: 1
+2020-09-25 00:16:28.985 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==>  Preparing: SELECT UUID,user_name,user_pwd,nick_name,sex,birthday,email,phone,address,head_address,biography,life_state,begin_time,update_time FROM next_user_t WHERE UUID=? 
+2020-09-25 00:16:28.995 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : ==> Parameters: 4(String)
+2020-09-25 00:16:29.037 DEBUG 6084 --- [main] c.n.j.f.d.m.NextUserTMapper.selectById   : <==      Total: 1
+2020-09-25 00:16:29.084  INFO 6084 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-25 00:16:29.113  INFO 6084 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

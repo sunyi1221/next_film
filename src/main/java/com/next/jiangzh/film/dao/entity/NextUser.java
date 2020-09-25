@@ -2,6 +2,11 @@ package com.next.jiangzh.film.dao.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 /**
  * <p>
@@ -11,6 +16,10 @@ import java.io.Serializable;
  * @author Sunyi
  * @since 2020-09-22
  */
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class NextUser extends Model<NextUser> {
 
     private static final long serialVersionUID = 1L;
@@ -22,41 +31,4 @@ public class NextUser extends Model<NextUser> {
 
     private String userPwd;
 
-    public Integer getUuid() {
-        return uuid;
-    }
-
-    public void setUuid(Integer uuid) {
-        this.uuid = uuid;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserPwd() {
-        return userPwd;
-    }
-
-    public void setUserPwd(String userPwd) {
-        this.userPwd = userPwd;
-    }
-
-    @Override
-    protected Serializable pkVal() {
-        return null;
-    }
-
-    @Override
-    public String toString() {
-        return "NextUser{" +
-        ", uuid=" + uuid +
-        ", userName=" + userName +
-        ", userPwd=" + userPwd +
-        "}";
-    }
 }
