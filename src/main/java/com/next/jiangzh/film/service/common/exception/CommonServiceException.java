@@ -1,5 +1,7 @@
 package com.next.jiangzh.film.service.common.exception;
 
+import lombok.Data;
+
 /**
  * 类名称：业务处理异常类
  *
@@ -10,6 +12,7 @@ package com.next.jiangzh.film.service.common.exception;
  * @date 2020/9/23 16:40
  * @updateRemark 修改备注：数据处理异常类
  */
+@Data
 public class CommonServiceException extends Exception {
 
     /**

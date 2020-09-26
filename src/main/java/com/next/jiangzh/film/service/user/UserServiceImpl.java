@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserServiceAPI {
         int isSuccess = userTMapper.insert(nextUserT);
         // 判断是否插入成功，成功时isSuccess为1
         if (isSuccess != 1) {
-            throw new CommonServiceException(500, "用户登记失败！");
+            throw new CommonServiceException(500, "用户注册失败！");
         }
     }
 

@@ -1,5 +1,8 @@
 package com.next.jiangzh.film.controller.user.vo;
 
+import com.next.jiangzh.film.common.utils.ToolUtils;
+import com.next.jiangzh.film.controller.common.BaseVO;
+import com.next.jiangzh.film.controller.exception.ParamErrorException;
 import lombok.Data;
 
 /**
@@ -13,7 +16,7 @@ import lombok.Data;
  * @updateRemark 修改备注：用户登记类
  */
 @Data
-public class EnrollUserVO {
+public class EnrollUserVO extends BaseVO {
 
     /**
      * 用户名
@@ -35,5 +38,18 @@ public class EnrollUserVO {
      * 地址
      */
     private String address;
+
+    /**
+     * 参数校验
+     */
+    @Override
+    public void checkParam() throws ParamErrorException {
+        if (ToolUtils.isEmpty(this.getUsername())) {
+            throw new ParamErrorException(400, "用户名不能为空！");
+        }
+        if (ToolUtils.isEmpty(this.getPassword())) {
+            throw new ParamErrorException(400, "密码不能为空！");
+        }
+    }
 
 }

@@ -39,11 +39,11 @@ public final class BaseResponseVO<M> {
     /**
      *  当前页数
      */
-    private int nowPage;
+    private Integer nowPage;
     /**
      *  总页数
      */
-    private int totalPage;
+    private Integer totalPage;
 
 
     public static<M> BaseResponseVO success() {
@@ -94,6 +94,13 @@ public final class BaseResponseVO<M> {
     public static<M> BaseResponseVO serviceFailed(String msg) {
         BaseResponseVO responseVo = new BaseResponseVO();
         responseVo.setStatus(1);
+        responseVo.setMsg(msg);
+        return responseVo;
+    }
+
+    public static<M> BaseResponseVO serviceFailed(int status, String msg) {
+        BaseResponseVO responseVo = new BaseResponseVO();
+        responseVo.setStatus(status);
         responseVo.setMsg(msg);
         return responseVo;
     }
