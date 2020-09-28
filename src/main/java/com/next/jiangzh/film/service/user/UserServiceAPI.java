@@ -2,7 +2,10 @@ package com.next.jiangzh.film.service.user;
 
 import com.next.jiangzh.film.controller.user.vo.EnrollUserVO;
 import com.next.jiangzh.film.controller.user.vo.UserInfoVO;
+import com.next.jiangzh.film.dao.entity.NextUserT;
 import com.next.jiangzh.film.service.common.exception.CommonServiceException;
+
+import java.util.List;
 
 public interface UserServiceAPI {
 
@@ -42,4 +45,10 @@ public interface UserServiceAPI {
      */
     UserInfoVO updateUserInfo(UserInfoVO userInfoVO) throws CommonServiceException;
 
+    /**
+     * 方法描述:查询用户信息
+     *
+     * @param  username 用户名
+     */
+    List<NextUserT> selectUser(String username);
 }

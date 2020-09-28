@@ -1,10 +1,12 @@
 package com.next.jiangzh.film.controller.user.vo;
 
+import com.next.jiangzh.film.controller.common.BaseVO;
+import com.next.jiangzh.film.controller.exception.ParamErrorException;
 import lombok.Data;
 
 /**
  * 类名称：用户信息类
- *
+ * <p>
  * 创建人： Sunyi
  * 创建时间：2020/9/23 17:27
  *
@@ -13,8 +15,9 @@ import lombok.Data;
  * @updateRemark 修改备注：用户信息类
  */
 @Data
-public class UserInfoVO {
+public class UserInfoVO extends BaseVO {
 
+    private Integer id;
     /**
      * 主键ID
      */
@@ -67,5 +70,18 @@ public class UserInfoVO {
      * 更新时间
      */
     private Long updateTime;
+
+
+    public Integer getUuid() {
+        return this.getId();
+    }
+
+    /**
+     * 参数校验
+     */
+    @Override
+    public void checkParam() throws ParamErrorException {
+
+    }
 
 }

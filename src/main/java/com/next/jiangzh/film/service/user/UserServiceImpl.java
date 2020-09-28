@@ -19,7 +19,7 @@ import java.util.Optional;
 
 /**
  * 类名称：用户Service接口实现类
- *
+ * <p>
  * 创建人： Sunyi
  * 创建时间：2020/9/23 17:56
  *
@@ -54,7 +54,7 @@ public class UserServiceImpl implements UserServiceAPI {
         queryWrapper.eq("user_name", userName);
         // 判断当前用户名是否存在，如果hasUserName=0则不存在，否则已存在
         int hasUserName = userTMapper.selectCount(queryWrapper);
-        return hasUserName == 0 ? false : true ;
+        return hasUserName == 0 ? false : true;
     }
 
     @Override
@@ -105,6 +105,13 @@ public class UserServiceImpl implements UserServiceAPI {
         }
     }
 
+    @Override
+    public List<NextUserT> selectUser(String username) {
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("user_name", username);
+        return userTMapper.selectList(queryWrapper);
+    }
+
 
     /** -------------------------------- 以下都是自定义方法 -------------------------------- */
 
@@ -118,7 +125,10 @@ public class UserServiceImpl implements UserServiceAPI {
         // 1、将属性名不一致的属性进行手动赋值
         userInfoVO.setUsername(nextUserT.getUserName());
         userInfoVO.setNickname(nextUserT.getNickName());
-        userInfoVO.setLifeState(nextUserT.getLifeState() + "");
+
+        if (ToolUtils.isNotEmpty(nextUserT.getLifeState())) {
+            userInfoVO.setLifeState(nextUserT.getLifeState() + "");
+        }
 
         // 将LocalDateTime时间转换成long类型的时间  +8表示东八区
         userInfoVO.setBeginTime(nextUserT.getBeginTime().toEpochSecond(ZoneOffset.of("+8")));

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 /**
  * 类名称：公用工具类
- *
+ * <p>
  * 创建人： Sunyi
  * 创建时间：2020/9/24 17:25
  *
@@ -18,7 +18,8 @@ public final class ToolUtils {
     /**
      * 构造器私有化，不可实例化
      */
-    private ToolUtils(){}
+    private ToolUtils() {
+    }
 
     /**
      * 方法描述：判断字符串是否为空
@@ -38,7 +39,19 @@ public final class ToolUtils {
      * @param src 字符串
      */
     public static boolean isNotEmpty(String src) {
-        if (src == null && src.trim().length() == 0) {
+        if (src == null || src.trim().length() == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 方法描述：判断数字类型是否不为空
+     *
+     * @param src 数字
+     */
+    public static boolean isNotEmpty(Integer src) {
+        if (src == null || "null".equals(src)) {
             return false;
         }
         return true;
@@ -54,7 +67,7 @@ public final class ToolUtils {
             Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
             return pattern.matcher(src).matches();
         }
-       return false;
+        return false;
     }
 
 }
